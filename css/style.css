@@ -1,6 +1,4 @@
-.container{
-	width: 100%;
-}
+/*标点工作界面*/
 .punct{
 	width: 100%;
 	height:100%;
@@ -63,3 +61,22 @@
 	margin-right: 5px;
 }
 
+/*格式标注工作界面*/
+.labelformat{
+	width: 100%;
+	height:100%;
+	position: relative;
+}
+.labelformat-in{
+	margin:15px;
+}
+.labelformat-in .left{
+	width: 50%;
+	height:500px;
+	border:1px solid #ccc;
+	border-radius:5px;
+}
+.labelformat-in .left img{
+	display: block;
+	width: 100%;
+}
