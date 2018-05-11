@@ -273,3 +273,45 @@
 	border-color: #27a9e3;
 	color: #27a9e3;
 }
+/*校勘判取工作界面*/
+.verify_judge{
+	width: 100%;
+	height:100%;
+	background:#fff;
+	border-radius:10px;
+	position: relative;
+}
+.verify_judge-in{
+	margin:15px;
+	border:1px solid #ccc;
+	border-radius:5px;
+}
+.verify_judge .tit{
+	padding:0 30px;
+	height:50px;
+	line-height: 50px;
+	border-bottom: 1px solid #ccc;
+}
+.verify_judge .tit span{
+	position: relative;
+	padding-left: 22px;
+}
+.verify_judge .tit .left:before{
+	position: absolute;
+	top:17px;
+	left:0;
+	content:"";
+	width:18px;
+	height:16px;
+	background:url(../imgs/icon11.png) no-repeat;
+}
+.verify_judge .tit .right:before{
+	position: absolute;
+	top:16px;
+	left:0;
+	content:"";
+	width:18px;
+	height:18px;
+	background:url(../imgs/icon12.png) no-repeat;
+	background-size: 18px 18px;
+}

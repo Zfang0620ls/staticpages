@@ -76,3 +76,9 @@ input[type="number"]{
 .fr{
     float: right;
 }
+.tl{
+    text-align: left;
+}
+.tr{
+    text-align: right;
+}
