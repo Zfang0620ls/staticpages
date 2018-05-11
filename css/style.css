@@ -27,27 +27,7 @@
 	text-align: center;
 	padding: 10px 0 20px 0;
 }
-.tools .btns span{
-	display:inline-block;
-	width: 68px;
-	height:30px;
-	border-radius: 18px;
-	text-align: center;
-	line-height: 30px;
-	border:1px solid #2e363f;
-	font-size:16px;
-	cursor: pointer;
-	color: #2e363f;
-}
-.tools .btns span:hover{
-	border-color: #27a9e3;
-	color: #27a9e3;
-}
-.tools .btns .store{
-	margin-right: 10px;
-	border-color: #27a9e3;
-	color: #27a9e3;
-}
+
 .tools .refer{
 	position:absolute;
 	right:15px;
@@ -70,13 +50,226 @@
 .labelformat-in{
 	margin:15px;
 }
-.labelformat-in .left{
-	width: 50%;
-	height:500px;
-	border:1px solid #ccc;
-	border-radius:5px;
+.labelformat .left-con{
+	width:40%;
+	margin-right: 2%;
 }
-.labelformat-in .left img{
+.labelformat .left{
+	width: 100%;
+	height:527px;
+	border:1px solid #ccc;
+	border-bottom: 0;
+	border-radius:5px 5px 0 0;
+}
+
+.labelformat .left img{
 	display: block;
 	width: 100%;
+}
+.labelformat .tools{
+	width: 100%;
+	height:40px;
+	border: 1px solid #ccc;
+	border-top:0;
+	border-radius:0 0 5px 5px;
+	text-align: right;
+	padding-top: 10px;
+}
+.labelformat .pager,.labelformat .btns{
+	display:inline-block;
+	margin-right: 10px;
+}
+.labelformat .btns span{
+	border-color:#ccc;
+}
+.labelformat .btns .store{
+	border-color:#27a9e3;
+}
+.labelformat .btns .store{
+	margin-right: 0;
+}
+.labelformat .right{
+	width: 58%;
+	position: relative;
+}
+.labelformat .right .bd{
+	width: 75%;
+	border:1px solid #ccc;
+	border-radius:5px;
+	box-sizing:border-box;
+}
+.labelformat .right .bd .tit{
+	height:50px;
+	line-height: 50px;
+	border-bottom: 1px solid #ccc;
+	padding-left: 35px;
+	position: relative;
+	color: #2e363f;
+}
+.labelformat .right .bd .tit:before{
+	content:"";
+	position: absolute;
+	top:17px;
+	left:15px;
+	width:15px;
+	height:17px;
+	background:url(../imgs/icon1.png) no-repeat;
+}
+.labelformat .right .bd .box{
+	padding:10px 20px;
+}
+.labelformat .right .bd .box li{
+	color: #333;
+	border-bottom: 1px dashed #ccc;
+	font-size:22px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+.labelformat .right .hd{
+	width: 25%;
+	margin-top: 51px;
+}
+.labelformat .right .hd span{
+	width:97%;
+	box-sizing:border-box;
+	display:block;
+	cursor: pointer;
+	height:50px;
+	line-height: 50px;
+	border:1px solid #ccc;
+	border-radius:0 5px 5px 0;
+	border-left:0;
+	padding-left: 50px;
+	position: relative;
+}
+.labelformat .right .hd span.active{
+	width: 100%;
+	box-sizing:border-box;
+	border-color: #27a9e3;
+	color: #27a9e3;
+	font-size:17px;
+}
+.labelformat .right .hd span i{
+	position: absolute;
+	top:0;
+	left:20px;
+}
+.labelformat .right .hd span:first-child i{
+	top:17px;
+	width:15px;
+	height:17px;
+	background:url(../imgs/icon2.png) no-repeat;
+}
+.labelformat .right .hd span:nth-child(2) i{
+	top:14px;
+	width:18px;
+	height:21px;
+	background:url(../imgs/icon3.png) no-repeat;
+}
+.labelformat .right .hd span:nth-child(3) i{
+	top:17px;
+	width:20px;
+	height:17px;
+	background:url(../imgs/icon4.png) no-repeat;
+}
+.labelformat .right .hd span:nth-child(4) i{
+	top:16px;
+	width:15px;
+	height:17px;
+	background:url(../imgs/icon5.png) no-repeat;
+}
+
+.labelformat .right .hd .active:nth-child(4) i{
+	top:13px;
+	width:23px;
+	height:24px;
+	background:url(../imgs/icon5-active.png) no-repeat;
+}
+.labelformat .right .hd span:nth-child(5) i{
+	top:17px;
+	width:20px;
+	height:16px;
+	background:url(../imgs/icon6.png) no-repeat;
+}
+
+.labelformat .right .hd span:nth-child(6) i{
+	top:15px;
+	width:20px;
+	height:20px;
+	background:url(../imgs/icon7.png) no-repeat;
+}
+.labelformat .right .hd span:nth-child(7) i{
+	top:15px;
+	width:18px;
+	height:20px;
+	background:url(../imgs/icon8.png) no-repeat;
+}
+.labelformat .right .hd span:nth-child(8) i{
+	top:17px;
+	width:18px;
+	height:16px;
+	background:url(../imgs/icon9.png) no-repeat;
+}
+.labelformat .right .hd span:nth-child(9) i{
+	top:15px;
+	width:14px;
+	height:20px;
+	background:url(../imgs/icon10.png) no-repeat;
+}
+.labelformat .right .doubt{
+	width:90px;
+	height:36px;
+	line-height: 36px;
+	text-align: center;
+	border:1px solid #27a9e3;
+	color: #27a9e3;
+	border-radius:20px;
+	position: absolute;
+	right:0;
+	bottom: 0;
+	cursor: pointer;
+}
+/*公共样式*/
+.pager span{
+	display:inline-block;
+	width: 30px;
+	height:30px;
+	text-align: center;
+	line-height: 30px;
+	border:1px solid #ccc;
+	border-radius:100%;
+	font-size:14px;
+	cursor: pointer;
+}
+.pager span:first-child{
+	border-color:#27a9e3;
+	color: #27a9e3;
+}
+.pager span:nth-child(2){
+	height:30px;
+	padding:0 10px;
+	width:auto;
+	line-height: 30px;
+	border-radius:18px;
+}
+.btns span{
+	display:inline-block;
+	width: 68px;
+	height:30px;
+	border-radius: 18px;
+	text-align: center;
+	line-height: 30px;
+	border:1px solid #2e363f;
+	font-size:16px;
+	cursor: pointer;
+	color: #2e363f;
+}
+.btns span:hover{
+	border-color: #27a9e3;
+	color: #27a9e3;
+}
+.btns .store{
+	margin-right: 10px;
+	border-color: #27a9e3;
+	color: #27a9e3;
 }
