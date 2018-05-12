@@ -34,6 +34,9 @@
 	top:12px;
 	color: #2e363f;
 }
+.tools .refer img{
+	margin-right: 5px;
+}
 .tools .refer input[type="checkbox"]{
 	vertical-align: middle;
 	width:15px;
