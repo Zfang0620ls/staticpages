@@ -79,6 +79,9 @@ input[type="number"]{
 .tl{
     text-align: left;
 }
+.tc{
+  text-align: center;
+}
 .tr{
     text-align: right;
 }
