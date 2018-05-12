@@ -62,9 +62,9 @@
 	border-radius:5px 5px 0 0;
 }
 
-.labelformat .left img{
-	display: block;
-	width: 100%;
+.labelformat .left{
+	height:550px;
+	overflow: scroll;
 }
 .labelformat .tools{
 	width: 100%;
@@ -270,6 +270,16 @@
 	border-color: #27a9e3;
 	color: #27a9e3;
 }
+.red{
+	color:#cc1626;
+}
+.green{
+	color:#3dcc16;
+}
+.redbg{
+	background:#cc1626;
+	color:#fff;
+}
 /*校勘判取工作界面*/
 .verify_judge{
 	width: 100%;
@@ -327,16 +337,7 @@
 	background:url(../imgs/icon14.png) no-repeat;
 	background-size: 18px 18px;
 }
-.verify_judge .red{
-	color:#cc1626;
-}
-.verify_judge .green{
-	color:#3dcc16;
-}
-.verify_judge .redbg{
-	background:#cc1626;
-	color:#fff;
-}
+
 .verify_judge .part1 .bd-in{
 	padding:0 30px;
 }
@@ -411,7 +412,7 @@
 	top:0;
 	left:0;
 	background-color: #fff;
-  box-shadow: 1px 1px 8px 0 rgba(0,0,0,.2);
+  box-shadow: 1px 1px 8px 0 rgba(0,0,0,.76);
 	padding:10px;
 	z-index:2;
 	height:auto;
@@ -433,7 +434,7 @@
 	margin-left: -6px;
   border-top: none;
   border-left: none;
-  box-shadow: 1px 1px 1px 0 rgba(0,0,0,.1);
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,.3);
 }
 .verify_judge .part2 .lists .dt-name .dialog{
 	position: absolute;
@@ -575,4 +576,176 @@ table{
 }
 .verify_judge .part2 .lists .split-dialog .split-btns{
 	margin:15px 0 10px 0;
+}
+/*文字校对*/
+.correct{
+	width: 100%;
+	height:100%;
+	position: relative;
+}
+.correct-in{
+	margin:15px;
+}
+.correct .left{
+	width:42%;
+	border:1px solid #ccc;
+	border-radius:5px;
+	box-sizing: border-box;
+	margin-right: 1%;
+}
+.correct .left .hd{
+	line-height: 50px;
+	border-bottom: 1px solid #ccc;
+	padding:0 10px;
+}
+.correct .left .bd{
+	overflow: scroll;
+	height:550px;
+}
+.correct .right{
+	width:57%;
+	border:1px solid #ccc;
+	border-radius:5px;
+	box-sizing: border-box;
+}
+.correct .right .hd{
+	line-height: 50px;
+	border-bottom: 1px solid #ccc;
+	padding:0 10px;
+	color:#2e363f;
+}
+.correct .right .hd .pager{
+	display:inline-block;
+	margin:0 12px 0 4px;
+}
+.correct .right .hd .newline,.correct .right .hd .del{
+	position: relative;
+	padding-right: 30px;
+}
+.correct .right .hd .newline{
+	margin-right: 13px;
+}
+.correct .right .hd .newline:before,.correct .right .hd .del:before{
+	position: absolute;
+	top:0;
+	right:0;
+	content:"";
+	background:url(../imgs/icon15.png) no-repeat;
+	width:23px;
+	height:22px;
+}
+.correct .right .hd .del:before{
+	width: 24px;
+	height:24px;
+	background:url(../imgs/icon16.png) no-repeat;
+}
+.correct .right .hd .btns span{
+	width: 58px;
+}
+.correct .right .hd .btns{
+	display: inline-block;
+}
+.correct .right .hd .btns .store{
+	margin-right: 0;
+}
+.correct .right .hd .help{
+	display: inline-block;
+	background:url(../imgs/icon17.png) no-repeat;
+	width:28px;
+	height:28px;
+	position: relative;
+	top:8px;
+	cursor: pointer;
+}
+.correct .right .diff-text{
+	border-bottom: 1px solid #ccc;
+}
+.correct .right .bd{
+	height:550px;
+	overflow-y: scroll;
+	position: relative;
+}
+.correct .right .bd ul{
+	padding:10px;
+}
+.correct .right .bd li{
+	color: #333;
+	border-bottom: 1px dashed #ccc;
+	font-size:22px;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+.correct .correct-dialog{
+	top:180px;
+	left:20px;
+	padding:10px;
+}
+.correct .correct-dialog:before{
+	left:31%;
+}
+.correct .correct-dialog .item{
+	margin-bottom: 10px;
+}
+.correct .correct-dialog .item dt{
+	display:inline-block;
+	width: 72px;
+	text-align: right;
+	margin-right: 5px;
+}
+.correct .correct-dialog .item dd{
+	display:inline-block;
+}
+.correct .correct-dialog .item input[type="text"]{
+	display: inline-block;
+	border:0;
+	width:250px;
+	padding:0 5px;
+	height:36px;
+	border:1px solid #ccc;
+	font-size:16px;
+}
+.correct .correct-dialog .item .text{
+	display: inline-block;
+	width:250px;
+	padding:0 5px;
+	height:36px;
+	line-height: 36px;
+	background:#f5f5f5;
+	cursor: pointer;
+}
+.correct .right .doubt-lists .hd{
+	padding-left: 40px;
+	position: relative;
+}
+.correct .right .doubt-lists .hd:before{
+	content:"";
+	position: absolute;
+	top:13px;
+	left:10px;
+	width:24px;
+	height:24px;
+	background:url(../imgs/icon18.png) no-repeat;
+	background-size:24px 24px;
+}
+.doubt-table th{
+	background-color: #fff;
+	text-align:center;
+	font-size:16px;
+	line-height: 48px;
+	color: #333;
+	font-weight:normal;
+	border-bottom: 1px solid #ededed;
+}
+.doubt-table td{
+	border-bottom: 1px solid #f5f5f5;
+	color: #333;
+	height: 40px;
+	text-align:center;
+	font-size:16px;
+	padding:5px 3px;
+	font-size:14px;
+}
+.doubt-table td em{
+	color:#27a9e3;
+	cursor: pointer;
 }
